@@ -1,0 +1,58 @@
+ LICENSE
+ -------
+    Copyright (C) 2016 Anthony Buckley
+
+    This file is part of ListenOverride bug workaround.
+
+    ListenOverride is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    ListenOverride is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with AstroCTC.  If not, see <http://www.gnu.org/licenses/>.
+
+
+ DESCRIPTION
+ -----------
+    ListenOverride has come about because of an issue that has been introduced
+    with a change to the network code in the Linux kernel. 
+    THIS IS NOT A CRITICISM OF THE CHANGES MADE.
+    However, a proposed patch to remedy the problem was rejected with the expectation
+    that changes to applications failing would have to be made. 
+    In my case, the application failing is the Epson network plugin for scanners.
+    The only problem with fixing this is that I / We do not have access the Epson network 
+    plugin code and Epson thus far have not been helpful.
+
+    Hence, the need to work around the problem...
+    A fuller explanation and details may be viewed at:
+    	https://patchwork.ozlabs.org/patch/618164/
+
+ HOW TO SETUP THE WORKAROUND
+ ---------------------------
+    The git homepage for ListenOverride is located at:
+
+    	https://github.com/mr-headwind/ListenOverride
+
+    .  Download or clone the code package files to a suitable directory (eg. ~/Dev/ListenOverride).
+    .  Compile the source and build the library. Instructions are commented in the code files.
+    .  cd /usr/lib/iscan
+    .  sudo cp -p network network2
+    .  sudo cp ~/Dev/ListenOverride/listen_override.so . 
+    .  sudo cp ~/Dev/ListenOverride/network . 
+    .  Ensure files are executable (chmod 755 *) if necessary
+    .  Start the scanner and test
+
+ FILES
+ -----
+    listen_override.c - Main override code
+			('listen_override2.c' is just another version, not much tested)
+    network           - Shell script to set the library preload
+    COPYING           - License
+    README            - This file
+
