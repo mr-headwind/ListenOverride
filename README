@@ -45,7 +45,7 @@
     .  sudo cp -p network network2
     .  sudo cp ~/Dev/ListenOverride/listen_override.so . 
     .  sudo cp ~/Dev/ListenOverride/network . 
-    .  Ensure files are executable (chmod 755 *) if necessary
+    .  Ensure files are executable (sudo chmod 755 *) if necessary
     .  Start the scanner and test
 
  FILES
