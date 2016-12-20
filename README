@@ -40,6 +40,8 @@
     	https://github.com/mr-headwind/ListenOverride
 
     .  Download or clone the code package files to a suitable directory (eg. ~/Dev/ListenOverride).
+    .  Open a Terminal or xterm
+    .  cd ~/Dev/ListenOverride
     .  Compile the source and build the library. Instructions are commented in the code files.
     .  cd /usr/lib/iscan
     .  sudo cp -p network network2
