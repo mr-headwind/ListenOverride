@@ -1,5 +1,5 @@
 #!/bin/sh
 
-LD_PRELOAD=/usr/lib/iscan/listen_override.so /usr/lib/iscan/network2
+LD_PRELOAD=/usr/lib/iscan/listen_override.so /usr/lib/iscan/orig_network
 
 exit 0

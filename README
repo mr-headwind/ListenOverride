@@ -44,7 +44,7 @@
     .  cd ~/Dev/ListenOverride
     .  Compile the source and build the library. Instructions are commented in the code files.
     .  cd /usr/lib/iscan
-    .  sudo cp -p network network2
+    .  sudo cp -p network orig_network
     .  sudo cp ~/Dev/ListenOverride/listen_override.so . 
     .  sudo cp ~/Dev/ListenOverride/network . 
     .  Ensure files are executable (sudo chmod 755 *) if necessary
