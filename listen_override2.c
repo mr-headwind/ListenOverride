@@ -8,6 +8,8 @@
 //             ld -shared -o listen_override.so listen_override2.o -ldl
 // To run:     LD_PRELOAD=./listen_override.so prog_name
 
+// ****WARNING: Probably best to use other code version as '_init' appears to be deprecated !
+
  
 int (*orig_listen)(int sockfd, int backlog);
  

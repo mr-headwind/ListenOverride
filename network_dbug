@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Listen override loading..." >> /tmp/listen_preload.dbg
+LD_PRELOAD=/usr/lib/iscan/listen_override.so /usr/lib/iscan/orig_network
+echo "Listen override exiting..." >> /tmp/listen_preload.dbg
+
+exit 0
