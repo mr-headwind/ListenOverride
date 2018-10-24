@@ -27,7 +27,8 @@
     that changes to applications failing would have to be made. 
     In my case, the application failing is the Epson network plugin for scanners.
     The only problem with fixing this is that I / We do not have access the Epson network 
-    plugin code and Epson thus far have not been helpful.
+    plugin code and Epson support thus far have not been helpful (ie. Useless). 
+    See my original bug at:- https://bugs.launchpad.net/bugs/1613027
 
     Hence, the need to work around the problem...
     A fuller explanation and details may be viewed at:
